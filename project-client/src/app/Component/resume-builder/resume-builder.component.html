@@ -1,0 +1,61 @@
+   <!-- <form [formGroup]="resumeForm" (ngSubmit)="onSubmit()">
+    <label>Full Name:</label>
+    <input type="text" formControlName="fullName">
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <label>Phone:</label>
+    <input type="tel" formControlName="phone">
+    <label>Education:</label>
+    <textarea formControlName="education"></textarea>
+    <label>Experience:</label>
+    <textarea formControlName="experience"></textarea>
+    <button type="submit">Generate Resume</button>
+  </form>
+  
+  <div *ngIf="showPopup" class="popup-container">
+    <div class="blur-background"></div>
+    <div class="popup-content">
+      <div class="popup-header">Resume Preview</div>
+      <div class="resume-preview">
+        <p>Full Name: {{ resumeData.fullName }}</p>
+        <p>Email: {{ resumeData.email }}</p>
+        <p>Phone: {{ resumeData.phone }}</p>
+        <p>Education: {{ resumeData.education }}</p>
+        <p>Experience: {{ resumeData.experience }}</p>
+      </div>
+      <button class="popup-button" (click)="downloadResume()">Download Resume</button>
+    </div>
+  </div>
+   -->
+
+   <!-- resume-builder.component.html -->
+
+   <form [formGroup]="resumeForm" (ngSubmit)="onSubmit()">
+    <label>Full Name:</label>
+    <input type="text" formControlName="fullName">
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <label>Phone:</label>
+    <input type="tel" formControlName="phone">
+    <label>Education:</label>
+    <textarea formControlName="education"></textarea>
+    <label>Experience:</label>
+    <textarea formControlName="experience"></textarea>
+    <button type="submit">Generate Resume</button>
+  </form>
+  
+  <div *ngIf="showPopup" class="popup-container">
+    <div class="blur-background"></div>
+    <div class="popup-content">
+      <div class="popup-header">Resume Preview</div>
+      <div class="resume-preview">
+        <p>Full Name: {{ resumeData.fullName }}</p>
+        <p>Email: {{ resumeData.email }}</p>
+        <p>Phone: {{ resumeData.phone }}</p>
+        <p>Education: {{ resumeData.education }}</p>
+        <p>Experience: {{ resumeData.experience }}</p>
+      </div>
+      <button class="popup-button" (click)="downloadResume()">Download Resume</button>
+    </div>
+  </div>
+  

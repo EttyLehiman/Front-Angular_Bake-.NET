@@ -1,0 +1,26 @@
+<header>
+  <div class="header">
+    <div class="logo" (click)="navigateToLogin()">
+      <h1>My Job Portal</h1>
+    </div>
+    <div class="user-info">
+      <span>{{ userName }}</span>
+      <a [routerLink]="'ListJobs/' + jobField">{{ jobField }}</a>
+      <span>{{countOfCV}}</span>
+    </div>
+
+  </div>
+</header>
+
+<router-outlet>
+</router-outlet>
+
+<footer>
+  <div class="footer">
+    <div class="contact-info">
+      <span>Contact details:</span>
+      <span>Website manager: 054-1234567</span>
+      <span>Email: adminexample.com</span>
+    </div>
+  </div>
+</footer>

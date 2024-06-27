@@ -1,0 +1,11 @@
+<div *ngIf="job">
+    <h2>{{job.field}}</h2>
+    <div>
+      <p><strong>Requirements:</strong> {{job.requirements}}</p>
+      <p><strong>Scope of Hours:</strong> {{job.scopeOfHours}}</p>
+      <p><strong>Area:</strong> {{job.area}}</p>
+      <div>לשליחת קורות חיים:</div>
+      <input  (click)="countCV()" type="file">
+    </div>
+  </div>
+  

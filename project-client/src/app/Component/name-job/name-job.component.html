@@ -1,0 +1,6 @@
+<div>{{ getEnumValue(nameJob.field) }}</div>
+<button appButtonStyling (click)="viewItems()">viewItems</button>
+<div *ngIf="flag">
+    <app-job-details (count)="sendNameOfJob()" [job]="nameJob"></app-job-details>
+</div>
+

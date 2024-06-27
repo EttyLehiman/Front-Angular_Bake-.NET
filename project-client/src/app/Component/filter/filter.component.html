@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+    <select appSelectStyling formControlName="area">
+      <option value="Haifa">Haifa</option>
+      <option value="Jerusalem">Jerusalem</option>
+      <option value="Tel Aviv">Tel Aviv</option>
+    </select>
+    
+    <select appSelectStyling formControlName="field">
+      <option value="QA">QA</option>
+      <option value="Server">Server</option>
+      <option value="Client">Client</option>
+    </select>
+    
+    <button appButtonStyling (click)="filter()">Filter</button>
+  </form>
+  
